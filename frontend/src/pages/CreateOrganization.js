@@ -26,7 +26,7 @@ const CreateOrganization = ({ user, token, toast }) => {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/organizations',
+        'https://volunteer-hours-tracker.vercel.app/api/organizations',
         formData,
         {
           headers: {

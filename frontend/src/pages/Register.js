@@ -32,7 +32,7 @@ const Register = ({ login }) => {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', {
+      const res = await axios.post('https://volunteer-hours-tracker.vercel.app/api/auth/register', {
         name,
         email,
         password,
@@ -40,7 +40,7 @@ const Register = ({ login }) => {
       });
 
       // Get user data
-      const userRes = await axios.get('http://localhost:5000/api/auth/me', {
+      const userRes = await axios.get('https://volunteer-hours-tracker.vercel.app/api/auth/me', {
         headers: {
           Authorization: `Bearer ${res.data.token}`,
         },

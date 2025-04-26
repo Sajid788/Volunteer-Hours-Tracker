@@ -11,7 +11,7 @@ const OrganizationDetail = ({ user, token }) => {
   useEffect(() => {
     const fetchOrganization = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/organizations/${id}`);
+        const res = await axios.get(`https://volunteer-hours-tracker.vercel.app/api/organizations/${id}`);
         setOrganization(res.data.data);
       } catch (err) {
         setError('Error fetching organization details');

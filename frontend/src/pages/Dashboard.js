@@ -27,7 +27,7 @@ const Dashboard = ({ user, token, toast }) => {
   const fetchHours = async () => {
     try {
       setLoading(true);
-      const res = await axios.get('http://localhost:5000/api/hours', {
+      const res = await axios.get('https://volunteer-hours-tracker.vercel.app/api/hours', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -93,7 +93,7 @@ const Dashboard = ({ user, token, toast }) => {
     
     try {
       await axios.put(
-        `http://localhost:5000/api/hours/${hourId}`,
+        `https://volunteer-hours-tracker.vercel.app/api/hours/${hourId}`,
         { status: newStatus },
         {
           headers: {
@@ -125,7 +125,7 @@ const Dashboard = ({ user, token, toast }) => {
     setActionLoading(true);
     
     try {
-      await axios.delete(`http://localhost:5000/api/hours/${deleteDialog.hourId}`, {
+      await axios.delete(`https://volunteer-hours-tracker.vercel.app/api/hours/${deleteDialog.hourId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -183,7 +183,7 @@ const Dashboard = ({ user, token, toast }) => {
     
     try {
       await axios.put(
-        `http://localhost:5000/api/hours/${hourId}`,
+        `https://volunteer-hours-tracker.vercel.app/api/hours/${hourId}`,
         editForm,
         {
           headers: {

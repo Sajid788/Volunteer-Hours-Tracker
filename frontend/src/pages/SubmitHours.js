@@ -22,7 +22,7 @@ const SubmitHours = ({ user, token, toast }) => {
     const fetchOrganizations = async () => {
       setLoading(true);
       try {
-        const res = await axios.get('http://localhost:5000/api/organizations');
+        const res = await axios.get('https://volunteer-hours-tracker.vercel.app/api/organizations');
         setOrganizations(res.data.data);
       } catch (err) {
         toast.error('Error loading organizations. Please try again later.');
@@ -47,7 +47,7 @@ const SubmitHours = ({ user, token, toast }) => {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/hours',
+        'https://volunteer-hours-tracker.vercel.app/api/hours',
         formData,
         {
           headers: {
