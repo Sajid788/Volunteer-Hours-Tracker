@@ -125,6 +125,23 @@ Valuteer is a comprehensive web application designed to streamline the process o
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## Admin Credentials
+- Email :- admin@example.com
+- Password :- admin@123
+
+## Screenshot
+![image](https://github.com/user-attachments/assets/e6f11d90-725f-4885-87df-8d6899352270)
+![image](https://github.com/user-attachments/assets/fbd5cc7d-837b-4eff-8b3b-7432fd44dd45)
+![image](https://github.com/user-attachments/assets/8dffb9ff-fcf2-4cda-9ba6-166ef212f0b9)
+![image](https://github.com/user-attachments/assets/4fb0fdfb-f23b-4565-94d0-24cbd4374620)
+![image](https://github.com/user-attachments/assets/d02dc8e7-46c9-4b4a-bd2a-474fa4498637)
+![image](https://github.com/user-attachments/assets/6c3adde4-66a5-45b7-9e23-263cd0c1a601)
+![image](https://github.com/user-attachments/assets/fa46bf70-cd51-4474-9122-599ffa406f43)
+![image](https://github.com/user-attachments/assets/c7015035-b8d8-4ab2-a0de-9ebc969ae7ab)
+
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
